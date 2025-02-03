@@ -60,6 +60,7 @@ public class CssSelectors {
         //WebElement radioButtonYes = driver.findElement(By.cssSelector("label[for='yesRadio']"));
         WebElement radioButtonYes = driver
                 .findElement(By.xpath("//label[@for='yesRadio']"));
+        //WebElement radioButtonYes = driver.findElement(By.xpath("//input[@id='yesRadio']"));
         radioButtonYes.click();
 
         try {
@@ -70,13 +71,6 @@ public class CssSelectors {
 
         driver.quit();
     }
-
-
-
-
-
-
-
 
     private void hideBanner(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
